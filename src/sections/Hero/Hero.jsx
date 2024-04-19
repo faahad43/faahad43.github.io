@@ -8,7 +8,7 @@ import {IconBrandBehance} from '@tabler/icons-react';
 import {IconBrandGithub} from '@tabler/icons-react';
 import {IconArrowNarrowDown} from '@tabler/icons-react';
 import {IconMail} from '@tabler/icons-react';
-import cv from '../../assets/Assignment2Daa.pdf';
+import cv from '../../assets/resume.pdf';
 
 const Hero = ({sendDataToGrandParent}) => {
     const linkedinUrl ='https://linkedin.com/in/syed-fahad-shah-441590244';
