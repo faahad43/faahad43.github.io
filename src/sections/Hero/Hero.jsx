@@ -53,7 +53,7 @@ const Hero = ({sendDataToGrandParent}) => {
                     }}
                     />
                 </h1>
-                <h2 className='text-2xl font-semibold'>Full Stack Developer</h2>
+                <h2 className='text-2xl font-semibold'>Frontend Developer</h2>
                 <p className='lg:w-[90%] xs:px-2 sm:px-6 md:px-14 lg:px-0'>Hi I am creative web developer based in Islamabad with a focus on innovation and user experience.</p>
                 <Button label="Download CV" onClick={handleDownload}/>
                 <div className='flex gap-x-2 xs:justify-center lg:justify-start pt-2'>
