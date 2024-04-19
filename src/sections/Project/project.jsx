@@ -22,7 +22,7 @@ const project = () => {
             description:'A webiste where you can check for gym plans and connect by sending email.',
             img:Gym,
             type:'react',
-            website:'https://www.google.com/'
+            website:'https://frontend-gym-website-react-lwoa.vercel.app/'
         },
         {
             name: 'Industrial Performance',
@@ -37,32 +37,32 @@ const project = () => {
             description:'Todo list to manage your daily routine task',
             img:Todo,
             type:'react',
-            website:'https://www.google.com/'
+            website:'https://to-do-list-react-phi-five.vercel.app/'
         },
         {
             name: 'Weather App',
             description:'A weather app that tells the live weather using weather api.',
             img:Weather,
             type:'html',
-            website:'https://www.google.com/'
+            website:'https://weather-app-ten-vert-78.vercel.app/'
         },
         {
             name: 'Nike Homepage',
             description:'A brandpage with the react framework',
             img:BrandPage,
             type:'react',
-            website:'https://www.google.com/'
+            website:'https://brand-page-seven.vercel.app/'
         },
         {
             name: 'Photography Website',
             description:'A portfolio website for a photographer where people can connect with him through email.',
             img:Photography,
             type:'html',
-            website:'https://www.google.com/'
+            website:'https://photography-portfolio-website-html-css-js.vercel.app/'
         },
         {
             name: 'Flight Managemen System',
-            description:'Flight Management System In pythin that uses file handling to manage the data.',
+            description:'Flight Management System In pythin that uses file handling to manage the data. This is desktop applicatioon',
             img:Flight,
             type:'python',
             website:'https://www.google.com/'
@@ -72,21 +72,21 @@ const project = () => {
             description:'Calender using HTML, CSS, & Javascript.',
             img:calender,
             type:'html',
-            website:'https://www.google.com/'
+            website:'https://caldener-html-css-js.vercel.app/'
         },
         {
             name: 'NCHD Homepage Redesign',
             description:'This is the redesign of NCHD homepage',
             img:nchd,
             type:'html',
-            website:'https://www.google.com/'
+            website:'https://nchd-homepage-resdeign.vercel.app/'
         },
         {
             name: 'Task Manager',
             description:'Task Manager that use local storage to manage your daily task.',
             img:taskManager,
             type:'html',
-            website:'https://www.google.com/'
+            website:'https://task-manager-self-three.vercel.app/'
         },
     ]
 
