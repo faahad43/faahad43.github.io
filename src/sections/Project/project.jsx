@@ -62,7 +62,7 @@ const project = () => {
         },
         {
             name: 'Flight Managemen System',
-            description:'Flight Management System In pythin that uses file handling to manage the data. This is desktop applicatioon',
+            description:'Flight Management System In pythin that uses file handling to manage the data.\n This is desktop application',
             img:Flight,
             type:'python',
             website:'https://www.google.com/'
