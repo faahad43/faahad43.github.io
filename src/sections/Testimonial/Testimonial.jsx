@@ -26,7 +26,7 @@ const Testimonial = ({themeMode}) => {
   ]
   return (
     <div id='testimonial' className='flex justify-center'>
-        <section id="testimonials" aria-label="What our customers are saying" className={`${themeMode?'bg-[#1c507d33]':'bg-slate-50'}  xs:py-10 md:py-28 w-[95%] xl:w-[90%] xl: rounded-2xl`}>
+        <section id="testimonials" aria-label="What our customers are saying" className={`${themeMode?'bg-[#1c507d33]':'bg-[#0881290d]'}  xs:py-10 md:py-28 w-[95%] xl:w-[90%] xl: rounded-2xl`}>
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-2xl text-center">
       <h2 className={`font-display text-3xl tracking-tight sm:text-4xl font-semibold`}>Testimonials</h2>

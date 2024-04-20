@@ -35,8 +35,8 @@ const navbar = ({sendDataToParent,themeMode}) => {
     
     <nav className='flex p-4 xs:mx-2 sm:ml-10 sm:mr-5 md:mx-12 lg:mx-20'>
         <div className='sm:w-[50%] xs:w-[70%]  flex gap-x-4 items-center'>
-            <h2>Developed <span className='text-[#7FF79E] font-medium xs:mr-0 mr-3'>By</span> <span className='cursor-pointer font-semibold text-[#24D2ED] inline-block hover:scale-105 duration-100 ease' onClick={()=>{window.open(instaLink,'_blank')}}>SFS</span></h2>
-            <div className={`cursor-pointer ${themeMode?"hover:text-[#24D2ED]":'hover:text-amber-500'} -ml-2`} onClick={()=>{settheme(!theme)}}>{theme ?<IconMoonStars/>: <IconSun/>}</div> 
+            <h2>Developed <span className={`${themeMode?'text-[#7FF79E]':'text-[#088129]'} font-medium xs:mr-0 mr-3`}>By</span> <span className={`cursor-pointer font-semibold ${themeMode?'text-[#24D2ED]':'text-[#12BED9]'} inline-block hover:scale-105 duration-100 ease`} onClick={()=>{window.open(instaLink,'_blank')}}>SFS</span></h2>
+            <div className={`cursor-pointer ${themeMode?"hover:text-[#24D2ED]":'hover:text-[#12BED9]'} -ml-2`} onClick={()=>{settheme(!theme)}}>{theme ?<IconMoonStars/>: <IconSun/>}</div> 
         </div>
         <div className='xs:w-[30%] sm:w-[70%]'>
         {mobile === true ? (
@@ -44,7 +44,7 @@ const navbar = ({sendDataToParent,themeMode}) => {
           <img onClick={()=>setVerticalNav(!verticalNav)} className="humburger cursor-pointer w-[2rem] absolute sm:right-8 xs:right-4" src={menu} />
         </div>
       ) : ''}
-            <div className={`flex ${mobile?` ${verticalNav ? 'visible':'hidden'}  flex-col absolute ${themeMode?'bg-[#2f4e68e8]':'bg-slate-50'} top-0 left-0  h-[100%] w-[80%] items-center pt-16 gap-y-8  z-10` : 'justify-end space-x-10  flex-row'}`}>
+            <div className={`flex ${mobile?` ${verticalNav ? 'visible':'hidden'}  flex-col absolute ${themeMode?'bg-[#2f4e68e8]':'bg-[#5781a57c]'} top-0 left-0  h-[100%] w-[80%] items-center pt-16 gap-y-8  z-10` : 'justify-end space-x-10  flex-row'}`}>
                 <div className='cursor-pointer '>
                         <Link
                         to='home'

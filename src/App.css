@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: column;
   font-family: "Montserrat";
+  background: #F8FCF9;
+  color: #09160B;
 }
 .dark-theme{
   background: #040805;
@@ -20,11 +22,7 @@
 }
 
 .dark-theme button{
-  background: #7FF79E;
   background: #1C507E;
-}
-.contact-button{
-  background: #7FF79E;
 }
 
 .font-quicksand{
@@ -46,7 +44,7 @@
   }
 }
 .animate-progress:hover > .light{
-  background: rgb(245 158 11);
+  background: #088128d2;
   animation: progress .5s ease-in-out forwards;
 }
 .animate-progress:hover > .dark{
@@ -84,10 +82,12 @@
   animation: scroll 2s ease infinite;
 }
 .mouse-scroll:hover > div > .dark{
-  background-color: #24D2ED;
+  /* background-color: #24D2ED; */
+  background: linear-gradient(to right, #7FF79E, #24D2ED);
 }
 .mouse-scroll:hover > div > .light{
-  background-color: rgb(245 158 11);
+  background-color: #12bed9;
+  background: linear-gradient(60deg, #088129 5%, #12bed9 90%);
 }
 @keyframes fadeIn {
   0%{

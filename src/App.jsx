@@ -9,12 +9,10 @@ import Testimonial from './sections/Testimonial/Testimonial'
 
 
 function App() {
-  const[themeMode,setthemeMode]= useState(false);
+  const[themeMode,setthemeMode]= useState(true);
 
   const handleDataFromChild = (data)=>{
-    setthemeMode(data=='dark'?true:false)
-    console.log('abc',data=='dark');
-    console.log("theme:",themeMode,'color',data);
+    setthemeMode(data=='light'?true:false)
 
   }
   useEffect(() => {

@@ -95,17 +95,16 @@ const project = ({themeMode}) => {
        const filteredProjects = data.map((item)=>{
           if(id == item.type){
               return(
-                  <ProjectCard name={item.name} desc={item.description} website={item.website} image={item.img}/>
+                  <ProjectCard name={item.name} desc={item.description} website={item.website} image={item.img} themeMode={themeMode}/>
                   )
           }
           else if(id == 'all'){
               return(
-                <ProjectCard name={item.name} desc={item.description} website={item.website} image={item.img}/>
+                <ProjectCard name={item.name} desc={item.description} website={item.website} image={item.img} themeMode={themeMode}/>
                   )
           }  
           })
 
-          console.log(filteredProjects);
           setProjects(filteredProjects)
 
       }, [id])
@@ -120,9 +119,9 @@ const project = ({themeMode}) => {
     <h2 className=' text-4xl font-semibold mb-14'>Projects</h2>
 
     <ul className='cursor-pointer flex xs:w-[90%] lg:w-[70%] justify-between text-center '>
-        <li className={`flex-grow border py-3 rounded-l-3xl ${id === 'all'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-orange-500 via-yellow-400 to-[#f89947]'):''}` } onClick={()=>handleProjects('all')}>All Projects</li>
-        <li className={`flex-grow border border-x-0 py-3 ${id === 'html'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-orange-500 via-yellow-400 to-[#f89947]'):''}`} onClick={()=>handleProjects('html')}>HTML / CSS</li>
-        <li className={`flex-grow border py-3 rounded-r-3xl ${id === 'react'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-orange-500 via-yellow-400 to-[#f89947]'):''}`} onClick={()=>handleProjects('react')}>React</li>
+        <li className={`flex-grow border py-3 rounded-l-3xl ${id === 'all'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-[#088129] to-[#12BED9]'):''}` } onClick={()=>handleProjects('all')}>All Projects</li>
+        <li className={`flex-grow border border-x-0 py-3 ${id === 'html'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-[#088129] to-[#12BED9]'):''}`} onClick={()=>handleProjects('html')}>HTML / CSS</li>
+        <li className={`flex-grow border py-3 rounded-r-3xl ${id === 'react'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-[#088129] to-[#12BED9]'):''}`} onClick={()=>handleProjects('react')}>React</li>
     </ul>
     <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-8  gap-8 w-[90%] min-h-[60%] max-h-[60%] overflow-y-scroll project-grid'>
     {projects}

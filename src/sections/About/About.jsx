@@ -28,7 +28,7 @@ const About = ({themeMode}) => {
     cplus,
   ]
   return (
-    <div className={`mb-28 mb w-screen flex flex-col items-center xs:py-10 md:py-20 ${themeMode?'bg-[#1c507d33]':'bg-slate-50'} xs:w-[95%] xl:w-[90%] rounded-2xl self-center`} id='about'>
+    <div className={`mb-28 mb w-screen flex flex-col items-center xs:py-10 md:py-20 ${themeMode?'bg-[#1c507d33]':'bg-[#0881290d]'} xs:w-[95%] xl:w-[90%] rounded-2xl self-center`} id='about'>
         <h2 className='text-4xl font-semibold mb-10' >About</h2>
         <div className='flex xs:flex-col  xl:flex-row '>
             <div className='flex-1 text-center'>
