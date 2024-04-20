@@ -35,9 +35,9 @@ function App() {
 
   return (
     <div className={`App transition-colors ease-in delay-100`}>
-      <Hero sendDataToGrandParent={handleDataFromChild}/>
-      <About/>
-      <Project/>
+      <Hero sendDataToGrandParent={handleDataFromChild} themeMode={themeMode}/>
+      <About themeMode={themeMode}/>
+      <Project themeMode={themeMode}/>
       <Testimonial themeMode={themeMode}/>
       <Contact/>
     </div>

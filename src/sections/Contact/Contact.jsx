@@ -35,7 +35,7 @@ const Contact = () => {
 
   return (
     <div className='w-screen py-28 flex flex-col items-center gap-y-10' id='contact'>
-        <h2 className='font-semibold text-3xl'>Contact ME</h2>
+        <h2 className='font-semibold text-4xl'>Contact ME</h2>
         <div className='flex w-[90%] '>
             <div className="contact-img flex-1 flex items-center justify-center w-[50%] lg: xs:hidden lg:flex relative hover:animate-wiggle hover:animate-infinite">
                 <img className='w-[55%] xl:w-[40%] h-auto z-10 animate-wiggle animate-infinite animate-duration-[2.2s] animate-ease-in-out animate-delay-1000' src={illustration} alt="" />

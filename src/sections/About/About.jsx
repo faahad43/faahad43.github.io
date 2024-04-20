@@ -12,7 +12,7 @@ import php from '../../assets/technologies/php-1.svg'
 import c from '../../assets/technologies/c.svg'
 import cplus from '../../assets/technologies/c-1.svg'
 
-const About = () => {
+const About = ({themeMode}) => {
   const techLogoData = [
     html, 
     css, 
@@ -28,8 +28,8 @@ const About = () => {
     cplus,
   ]
   return (
-    <div className='mb-28 mb w-screen flex flex-col items-center' id='about'>
-        <h2 className='text-3xl font-medium mb-10' >About</h2>
+    <div className={`mb-28 mb w-screen flex flex-col items-center xs:py-10 md:py-20 ${themeMode?'bg-[#1c507d33]':'bg-slate-50'} w-[95%] xl:w-[90%] rounded-2xl self-center`} id='about'>
+        <h2 className='text-4xl font-semibold mb-10' >About</h2>
         <div className='flex xs:flex-col  xl:flex-row '>
             <div className='flex-1 text-center'>
                 <h3 className='text-2xl font-medium'>Skills</h3>

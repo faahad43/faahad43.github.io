@@ -12,7 +12,7 @@ import BrandPage from '../../assets/ProjectAssest/BrandPage.jpeg'
 import nchd from '../../assets/ProjectAssest/nchd.jpg'
 import Photography from '../../assets/ProjectAssest/Photography.jpeg'
 
-const project = () => {
+const project = ({themeMode}) => {
     const [id, setID] = useState('all');
     const [projects, setProjects] = useState([]);
 
@@ -117,12 +117,12 @@ const project = () => {
       }
   return (
 <div className='w-screen mb-20 flex flex-col items-center' id='project'>
-    <h2 className=' text-3xl font-bold mb-8'>Projects</h2>
+    <h2 className=' text-4xl font-semibold mb-14'>Projects</h2>
 
     <ul className='cursor-pointer flex xs:w-[90%] lg:w-[70%] justify-between text-center '>
-        <li className={`flex-grow border py-3 rounded-l-3xl ${id === 'all'?'bg-gradient-to-r from-orange-500 via-yellow-400 to-[#f89947]':''}` } onClick={()=>handleProjects('all')}>All Projects</li>
-        <li className={`flex-grow border border-x-0 py-3 ${id === 'html'?'bg-gradient-to-r from-blue-400 to-purple-500':''}`} onClick={()=>handleProjects('html')}>HTML / CSS</li>
-        <li className={`flex-grow border py-3 rounded-r-3xl ${id === 'react'?'bg-gradient-to-r from-blue-400 to-purple-500':''}`} onClick={()=>handleProjects('react')}>React</li>
+        <li className={`flex-grow border py-3 rounded-l-3xl ${id === 'all'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-orange-500 via-yellow-400 to-[#f89947]'):''}` } onClick={()=>handleProjects('all')}>All Projects</li>
+        <li className={`flex-grow border border-x-0 py-3 ${id === 'html'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-orange-500 via-yellow-400 to-[#f89947]'):''}`} onClick={()=>handleProjects('html')}>HTML / CSS</li>
+        <li className={`flex-grow border py-3 rounded-r-3xl ${id === 'react'?(themeMode?'bg-gradient-to-r from-[#5eed84] to-[#09467c]':'bg-gradient-to-r from-orange-500 via-yellow-400 to-[#f89947]'):''}`} onClick={()=>handleProjects('react')}>React</li>
     </ul>
     <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-8  gap-8 w-[90%] min-h-[60%] max-h-[60%] overflow-y-scroll project-grid'>
     {projects}

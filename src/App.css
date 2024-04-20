@@ -15,7 +15,16 @@
   font-family: "Montserrat";
 }
 .dark-theme{
-  background: rgb(64, 38, 156);
+  background: #040805;
+  color:#E9F6EB;
+}
+
+.dark-theme button{
+  background: #7FF79E;
+  background: #1C507E;
+}
+.contact-button{
+  background: #7FF79E;
 }
 
 .font-quicksand{
@@ -36,8 +45,12 @@
     width: 100%;
   }
 }
-.animate-progress:hover > div{
+.animate-progress:hover > .light{
   background: rgb(245 158 11);
+  animation: progress .5s ease-in-out forwards;
+}
+.animate-progress:hover > .dark{
+  background: #7FF79E;
   animation: progress .5s ease-in-out forwards;
 }
 
@@ -69,9 +82,13 @@
 
 .mouse-scroll:hover > div > div{
   animation: scroll 2s ease infinite;
-  background-color: #FFC107;
 }
-
+.mouse-scroll:hover > div > .dark{
+  background-color: #24D2ED;
+}
+.mouse-scroll:hover > div > .light{
+  background-color: rgb(245 158 11);
+}
 @keyframes fadeIn {
   0%{
     top:100%

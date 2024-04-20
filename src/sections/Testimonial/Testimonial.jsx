@@ -25,11 +25,11 @@ const Testimonial = ({themeMode}) => {
     
   ]
   return (
-    <div id='testimonial'>
-        <section id="testimonials" aria-label="What our customers are saying" className={`${themeMode?'':'bg-slate-50'} py-20 sm:py-`}>
+    <div id='testimonial' className='flex justify-center'>
+        <section id="testimonials" aria-label="What our customers are saying" className={`${themeMode?'bg-[#1c507d33]':'bg-slate-50'}  xs:py-10 md:py-28 w-[95%] xl:w-[90%] xl: rounded-2xl`}>
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-2xl text-center">
-      <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">Testimonials</h2>
+      <h2 className={`font-display text-3xl tracking-tight sm:text-4xl font-semibold`}>Testimonials</h2>
     </div>
     <ul role="list"
       className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
