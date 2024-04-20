@@ -44,7 +44,7 @@ const navbar = ({sendDataToParent,themeMode}) => {
           <img onClick={()=>setVerticalNav(!verticalNav)} className="humburger cursor-pointer w-[2rem] absolute sm:right-8 xs:right-4" src={menu} />
         </div>
       ) : ''}
-            <div className={`flex ${mobile?` ${verticalNav ? 'visible':'hidden'}  flex-col absolute ${themeMode?'bg-[#2f4e68e8]':'bg-[#5781a57c]'} top-0 left-0  h-[100%] w-[80%] items-center pt-16 gap-y-8  z-10` : 'justify-end space-x-10  flex-row'}`}>
+            <div className={`flex ${mobile?` ${verticalNav ? 'visible':'hidden'}  flex-col absolute ${themeMode?'bg-[#2f4e68e8]':'bg-[#457eac99]'} top-0 left-0  h-[100%] w-[80%] items-center pt-16 gap-y-8  z-10` : 'justify-end space-x-10  flex-row'}`}>
                 <div className='cursor-pointer '>
                         <Link
                         to='home'
