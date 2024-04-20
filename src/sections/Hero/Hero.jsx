@@ -84,7 +84,7 @@ const Hero = ({sendDataToGrandParent}) => {
             </div>
             <div className='flex justify-center lg:w-[50%]'>
                 <div className='xs:w-[15rem] xs:h-[16rem] md:w-[21rem] md:h-[22rem] xl:mb-24 grayscale-0 hover:grayscale-0 duration-[3s] ease-in-out relative lg:top-[20%] lg:left-3 lef'>
-                    <img className={`w-[100%] h-[100%] hero-image ${toggleImg?'border-amber-500':'border-gray-200'} object-cover border-8 hover:border-amber-500 duration-[3s] ease-in-out`} src={HeroImg} alt="" onClick={handleImageToggle} />
+                    <img className={`w-[100%] h-[100%] hero-image ${toggleImg?'border-amber-500':'border-gray-200'} object-cover border-8 md:hover:border-amber-500 duration-[3s] ease-in-out`} src={HeroImg} alt="" onClick={handleImageToggle} />
                 </div>
             </div>
         
