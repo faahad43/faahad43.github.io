@@ -11,7 +11,7 @@ import {IconMail} from '@tabler/icons-react';
 import cv from '../../assets/resume.pdf';
 
 const Hero = ({sendDataToGrandParent,themeMode}) => {
-    const linkedinUrl ='https://linkedin.com/in/syed-fahad-shah-441590244';
+    const linkedinUrl ='https://linkedin.com/in/sfaahad43';
     const githubUrl = 'https://github.com/faahad43';
     const handleDownload = () => {
         // File URL

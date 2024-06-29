@@ -11,6 +11,8 @@ import taskManager from '../../assets/ProjectAssest/taskManager.jpg'
 import BrandPage from '../../assets/ProjectAssest/BrandPage.jpeg'
 import nchd from '../../assets/ProjectAssest/nchd.jpg'
 import Photography from '../../assets/ProjectAssest/Photography.jpeg'
+import Attendance from "../../assets/ProjectAssest/Attendance.png"
+import StudyBuddy from "../../assets/ProjectAssest/StudyBuddy.png"
 
 const project = ({themeMode}) => {
     const [id, setID] = useState('all');
@@ -30,6 +32,22 @@ const project = ({themeMode}) => {
             img:Industrial,
             website:'https://scintillating-chaja-445eb4.netlify.app/',
             type:'html'
+
+        },
+        {
+            name: 'Attendance System',
+            description:'An Attendance System built using the MERN stack that includes user and admin panels for managing attendance records efficiently.',
+            img:Attendance,
+            website:'https://github.com/faahad43/Attendance-System',
+            type:'react'
+
+        },
+        {
+            name: 'Study Buddy',
+            description:'A web application in MERN designed to enhance your solo or in groups study experience. It offers features like video calls, goal tracking, Pomodoro timers, and real-time chat, making it the perfect companion for your study sessions',
+            img:StudyBuddy,
+            website:'https://github.com/faahad43/Study_Buddy',
+            type:'react'
 
         },
         {
