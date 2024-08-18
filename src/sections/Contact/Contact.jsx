@@ -43,9 +43,9 @@ const Contact = () => {
             </div>
             <div className="contact-form flex-1 w-[50%] lg:py-16 ">
                 <form className='flex flex-col gap-4 justify-center items-center xl:mr-6' ref={form} onSubmit={sendEmail}>
-                    <input className='border block xs:w-[90%] md:w-[75%] lg:w-[65%] xl:w-[70%] p-2 outline-none rounded' value={name} onChange={(e)=>setName(e.target.value)} type="text" name='user-name' placeholder='Name'/>
-                    <input className='border block xs:w-[90%] md:w-[75%] lg:w-[65%] xl:w-[70%] p-2 outline-none rounded'  value={email} onChange={(e)=>setEmail(e.target.value)}type="text" name='user-email' placeholder='Email'/>
-                    <textarea className='border block xs:w-[90%] md:w-[75%] lg:w-[65%] xl:w-[70%] resize-none p-2 outline-none rounded' value={message} onChange={(e)=>setMessage(e.target.value)} name="message" id=""  rows="10" placeholder='Message'></textarea>
+                    <input className='border block text-black xs:w-[90%] md:w-[75%] lg:w-[65%] xl:w-[70%] p-2 outline-none rounded' value={name} onChange={(e)=>setName(e.target.value)} type="text" name='user-name' placeholder='Name'/>
+                    <input className='border block text-black xs:w-[90%] md:w-[75%] lg:w-[65%] xl:w-[70%] p-2 outline-none rounded'  value={email} onChange={(e)=>setEmail(e.target.value)}type="text" name='user-email' placeholder='Email'/>
+                    <textarea className='border block text-black xs:w-[90%] md:w-[75%] lg:w-[65%] xl:w-[70%] resize-none p-2 outline-none rounded' value={message} onChange={(e)=>setMessage(e.target.value)} name="message" id=""  rows="10" placeholder='Message'></textarea>
                     <Button label="Submit" value="Send"/>
                 </form>
             </div>
