@@ -25,7 +25,7 @@ const project = ({themeMode}) => {
             description:'A website for a company that provide software development services, built using React and Tailwind CSS.',
             img:Graysol,
             type:'react',
-            website: 'https://graysol-web-app-three.vercel.app/contact'
+            website: 'https://graysol-web-app-three.vercel.app/'
         },
         {
             name: 'Gym Website',
