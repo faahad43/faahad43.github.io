@@ -13,12 +13,20 @@ import nchd from '../../assets/ProjectAssest/nchd.jpg'
 import Photography from '../../assets/ProjectAssest/Photography.jpeg'
 import Attendance from "../../assets/ProjectAssest/Attendance.png"
 import StudyBuddy from "../../assets/ProjectAssest/StudyBuddy.png"
+import Graysol from '../../assets/ProjectAssest/Graysol.png' 
 
 const project = ({themeMode}) => {
     const [id, setID] = useState('all');
     const [projects, setProjects] = useState([]);
 
     const data = [
+        {
+            name: 'Graysol Website',
+            description:'A website for a company that provide software development services, built using React and Tailwind CSS.',
+            img:Graysol,
+            type:'react',
+            website: 'https://graysol-web-app-three.vercel.app/contact'
+        },
         {
             name: 'Gym Website',
             description:'A webiste where you can check for gym plans and connect by sending email.',
